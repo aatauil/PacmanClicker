@@ -64,6 +64,10 @@ img{
     
 }
 
+.animation {
+    animation: rotate 1s 1 ease;
+}
+
 @keyframes click{
     0%{
         transform:scale(1);
@@ -178,6 +182,14 @@ img{
     position: absolute;
     top: 100px;
     left: 220px;
+    color:rgb(255, 255, 255);
+    font-family: 'Gamefont';
+    font-size: 30px;
+}
+#time {
+    position: absolute;
+    top: 200px;
+    left: 300px;
     color:rgb(255, 255, 255);
     font-family: 'Gamefont';
     font-size: 30px;

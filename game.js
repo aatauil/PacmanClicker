@@ -46,51 +46,67 @@ Multiplier4.addEventListener('click', function() {
 
 // bonus
 let bonus = document.getElementById('bonus');
-let time = 30;
+let time = 31;
+let timeElement = document.getElementById('time');
 bonus.addEventListener('click', function() {
     if (score >= prixBonus) {
-        multiplicateur = multiplicateur * 2
-        setInterval(function() {
+        multiplicateur = multiplicateur * 10
+        score -= prixBonus;
+        affichage.innerHTML = score;
+        let interval = setInterval(function() {
+            timeElement.innerHTML = "Temps restant : " + time - 1;
             time -= 1;
+            console.log(time, timeElement);
+            if (time == 0) {
+                clearInterval(interval);
+                multiplicateur = multiplicateur / 10;
+                prixBonus = prixBonus * 2;
+                timeElement.innerHTML = "";
+                time = 31;
+            }
         }, 1000);
-        setTimeout(function() {
-            clearInterval(bonus);
-            multiplicateur = multiplicateur / 2;
-            prixBonus = prixBonus ** 2;
-            
-        }, 5000);
     }
 })
+
 
 // écouter le changement du score
 setInterval(function() {
     if (score >= 5 && liste[1] == true) {
         niveau += 1;
         niveauAffichage.innerHTML = "Niveau : " + niveau;
-        cookie.style.animation = 'rotate 1s 1 ease';
+        cookie.classList.toggle('animation');
         // document.body.style.backgroundImage = '';
         liste[1] = false;
         cookie.addEventListener('animationend', function() {
-        cookie.style.animation = "initial";
+        cookie.classList.remove('animation');
         });
     } else if (score >= 10 && liste[2] == true) {
         niveau += 1;
         niveauAffichage.innerHTML = "Niveau : " + niveau;
-        cookie.style.animation = 'rotate 2s 1 ease running';
+        cookie.classList.toggle('animation');
         // document.body.style.backgroundImage = '';
         liste[2] = false;
-    } else if (score >= 30 && liste[3] == true) {
+        cookie.addEventListener('animationend', function() {
+            cookie.classList.remove('animation');
+            });
+    } else if (score >= 15 && liste[3] == true) {
         niveau += 1;
         niveauAffichage.innerHTML = "Niveau : " + niveau;
-        cookie.style.animation = '2s 1 ease rotate';
+        cookie.classList.toggle('animation');
         // document.body.style.backgroundImage = '';
         liste[3] = false;
-    } else if (score >= 40 && liste[4] == true) {
+        cookie.addEventListener('animationend', function() {
+            cookie.classList.remove('animation');
+            });
+    } else if (score >= 20 && liste[4] == true) {
         niveau += 1;
         niveauAffichage.innerHTML = "Niveau : " + niveau;
-        cookie.style.animation = '2s 1 ease rotate';
+        cookie.classList.toggle('animation');
         // document.body.style.backgroundImage = '';
         liste[4] = false;
+        cookie.addEventListener('animationend', function() {
+            cookie.classList.remove('animation');
+            });
     }
 }, 500)
 
