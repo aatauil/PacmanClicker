@@ -8,7 +8,6 @@
     src: url('./gameBoy.ttf');
 }
 
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 
 body{
@@ -86,6 +85,7 @@ img{
     }
 
 }
+
 @keyframes rotate {
   0%{
     transform:rotate(0deg);
@@ -104,9 +104,6 @@ img{
     margin-top: 100px;
     margin-left: 20%;
     padding: 15px;
-    color: white;
-    font-size: 80px;
-    font-weight: 700;
     border: 8px solid rgb(0, 26, 255);
     border-right: none;
     border-left: none;
@@ -126,12 +123,15 @@ img{
 }
 
 .txtLeft{
+    text-align: center;
     font-size: 14px;
+    font-family: "Gamefont";
+    color: white;
     position: absolute;
     bottom: auto;
     width: 300px;
-    margin-top: 80px;
-    padding-left: 300px;
+    margin-top: 130px;
+    padding-left: 200px;
 }
 
 
@@ -142,9 +142,6 @@ img{
     margin-top: 100px;
     margin-left: 285px;
     padding: 15px;
-    color: white;
-    font-size: 80px;
-    font-weight: 700;
     border: 8px solid rgb(0, 26, 255);
     border-right: none;
     border-left: none;
@@ -164,12 +161,15 @@ img{
 }
 
 .txtRight{
+    text-align: center;
     font-size: 14px;
+    font-family: "Gamefont";
+    color: white;
     position: absolute;
     bottom: auto;
     width: 300px;
-    margin-top: 80px;
-    padding-right: 100px;
+    margin-top: 130px;
+    padding-right: 90px;
 }
 
 .multiplier-2x{
@@ -181,16 +181,17 @@ img{
 
 }
 
-.random-Bonus, .txt-deadGhost{
+
+.random-Bonus{
     margin-top: 500px;
 }
 
 .txt-multi4x, .txt-pinkGhost{
-    margin-top: 280px;
+    margin-top: 330px;
 }
 
-.txt-bonus{
-    margin-top: 500px;
+.txt-bonus, .txt-deadGhost{
+    margin-top: 540px;
 }
 
 p > span{
