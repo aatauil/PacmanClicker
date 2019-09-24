@@ -208,7 +208,7 @@ p > span{
     font-size: 50px;
 }
 #pacMan{
-  width:50%;
+  width:45%;
   top:25%;
   left:25%;
 }
@@ -224,6 +224,10 @@ p > span{
     bottom: 20px;
     right: 50%;
     left: auto;
+}
+p{
+        color:rgb(255, 255, 255);
+        font-family: 'Gamefont';
 }
 
 
@@ -307,9 +311,9 @@ p > span{
 }
 #time {
     position: absolute;
-    top: 200px;
-    left: 300px;
+    top: 490px;
+    left: 200px;
     color:rgb(255, 255, 255);
     font-family: 'Gamefont';
-    font-size: 30px;
+    font-size: 20px;
 }
