@@ -53,6 +53,7 @@ img:active{
     animation-iteration-count:infinite;
     animation-name:click; 
 }
+
 @keyframes click{
     0%{
         transform:scale(1);
