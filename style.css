@@ -58,18 +58,10 @@ img{
     position:absolute;
     user-select:none;
 }
-img:active{
-    animation-duration:0.2s;
-    animation-iteration-count:1;
-    animation-name:click;
-
+#pacMan:active{
+    animation: 0.2s 1 click;
     /* animation pour changement de niveau */
-
-    /*
-    animation-duration:2s;
-    animation-timing-function:ease;
-    animation-name:rotate;
-    */
+    
 }
 
 @keyframes click{
@@ -170,7 +162,7 @@ img:active{
   left:25%;
 }
 
-p{
+#affichage{
     position:absolute;
     color:rgb(255, 255, 255);
     font-family: 'Gamefont';
@@ -181,4 +173,12 @@ p{
     bottom: 20px;
     right: 50%;
     left: auto;
+}
+#niveau{
+    position: absolute;
+    top: 100px;
+    left: 220px;
+    color:rgb(255, 255, 255);
+    font-family: 'Gamefont';
+    font-size: 30px;
 }
