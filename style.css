@@ -38,7 +38,7 @@ body{
 }
 
 .section_middle_canvas {
-    width: 45%;   
+    width: 45%;
     display: inline-block;
     height: 100vh;
     /* background: rgba(0,255,0, 0.2); */
@@ -56,11 +56,20 @@ body{
 }
 img{
     position:absolute;
+    user-select:none;
 }
 img:active{
+    animation-duration:0.2s;
+    animation-iteration-count:1;
+    animation-name:click;
+
+    /* animation pour changement de niveau */
+
+    /*
     animation-duration:2s;
-    animation-iteration-count:infinite;
-    animation-name:click; 
+    animation-timing-function:ease;
+    animation-name:rotate;
+    */
 }
 
 @keyframes click{
@@ -80,6 +89,14 @@ img:active{
         transform:scale(1);
     }
 
+}
+@keyframes rotate {
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
 }
 
 /* buttons */
@@ -147,7 +164,11 @@ img:active{
     font-family: 'PACFONT';
     font-size: 50px;
 }
-
+#pacMan{
+  width:50%;
+  top:25%;
+  left:25%;
+}
 
 p{
     position:absolute;
