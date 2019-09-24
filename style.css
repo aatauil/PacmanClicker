@@ -3,6 +3,11 @@
     src: url('./PAC-FONT.TTF');
 }
 
+@font-face {
+    font-family: 'Gamefont';
+    src: url('./gameBoy.ttf');
+}
+
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 
@@ -141,5 +146,13 @@ img:active{
 
 p{
     position:absolute;
-    color:white;
+    color:rgb(255, 255, 255);
+    font-family: 'Gamefont';
+    font-size: 70px;
+    transform: translate(50%, 50%);
+    text-align: center;
+    top: auto;
+    bottom: 20px;
+    right: 50%;
+    left: auto;
 }
