@@ -72,3 +72,8 @@ bonus[2].addEventListener('click', function() {
         
     }, 5000);
 })
+
+
+
+
+
