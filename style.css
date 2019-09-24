@@ -100,6 +100,11 @@ img:active{
     border-radius: 100px;
 }
 
+.imgLeft:hover{
+    width: 115px;
+    padding-right: 300px;
+}
+
 .imgRight{
 
     position: absolute;
