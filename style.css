@@ -44,6 +44,9 @@ body{
     display: inline-block;
     height: 100vh;
     /* background: rgba(0,0,255, 0.2); */
+    position:absolute;
+    right:5%;
+    top:0%;
 }
 img{
     position:absolute;
@@ -136,4 +139,5 @@ img:active{
 
 p{
     position:absolute;
+    color:white;
 }

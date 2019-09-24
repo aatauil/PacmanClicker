@@ -6,17 +6,17 @@ let prixAuto = 10;
 let prixBonus = 10;
 affichage.innerHTML = score;
 // cookie clicker
-let bouton = document.getElementById('clic');
-bouton.addEventListener('click', function() {
+let bouton = document.getElementsByTagName('img');
+bouton[3].addEventListener('click', function() {
     addition();
     affichage.innerHTML = score;
 })
 
 // multiplier
-let boutonMultiplier = document.getElementById('multiplier');
-boutonMultiplier.innerHTML = "Multiplicateur x" + multiplicateur + " Prix : " + prixMultiplier;
-boutonMultiplier.disabled = true;
-boutonMultiplier.addEventListener('click', function augmenterMultiplicateur() {
+let boutonMultiplier = document.getElementsByTagName('img');
+boutonMultiplier[0].innerHTML = "Multiplicateur x" + multiplicateur + " Prix : " + prixMultiplier;
+boutonMultiplier[0].disabled = true;
+boutonMultiplier[0].addEventListener('click', function augmenterMultiplicateur() {
     if (score >= prixMultiplier) {
         multiplicateur += 1;
         score -= prixMultiplier;
@@ -46,8 +46,8 @@ setInterval(function() {
 }, 100)
 
 // autoclic
-let autoclic = document.getElementById('autoclic');
-autoclic.addEventListener('click', function() {
+let autoclic = document.getElementsByTagName('img');
+autoclic[1].addEventListener('click', function() {
     score -= prixAuto;
     setInterval(function autoclic() {
         addition();
@@ -57,10 +57,10 @@ autoclic.addEventListener('click', function() {
 })
 
 // bonus
-let bonus = document.getElementById('bonus');
+let bonus = document.getElementsByTagName('img');
 let time = 30;
 bonus.innerHTML = time;
-bonus.addEventListener('click', function() {
+bonus[2].addEventListener('click', function() {
     multiplicateur = multiplicateur * 2
     setInterval(function bonus() {
         time -= 1;
