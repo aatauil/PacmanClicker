@@ -1,54 +1,39 @@
 # PacmanClicker
 Cookieclicker , packman style
 
-Une petite description du projet
-
 ## Pour commencer
 
-Entrez ici les instructions pour bien débuter avec votre projet...
+### Ouvrir un fichier dans votre navigateur web, il existe deux méthode :
 
-### Pré-requis
+- Le protocol HTTP : c'est-à-dire utiliser le navigateur pour accéder au fichier de votre serveur web local.
 
-Ce qu'il est requis pour commencer avec votre projet...
-
-- Programme 1
-- Programme 2
-- etc...
-
-### Installation
-
-Les étapes pour installer votre programme....
-
-Dites ce qu'il faut faire...
-
-_exemple_: Executez la commande ``telnet mapscii.me`` pour commencer ensuite [...]
+- Le protocole file : celui-ci permet d'accéder directement aux fichiers de votre ordinateur via le système de fichiers .
 
 
-Ensuite vous pouvez montrer ce que vous obtenez au final...
+### Ce qu'il est requis pour commencer : Un navigateur Web.
 
-## Démarrage
+- Internet Explorer 11
+- Firefox 69.0 
+- Opéra 63.0.3368.53
+- Safari 13.0
+- Google Chrome 76.0.3809.132
 
-Dites comment faire pour lancer votre projet
 
 ## Fabriqué avec
 
-Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
-
-_exemples :_
-* [Materialize.css](http://materializecss.com) - Framework CSS (front-end)
-* [Atom](https://atom.io/) - Editeur de textes
-
-## Contributing
-
-Si vous souhaitez contribuer, lisez le fichier [CONTRIBUTING.md](https://example.org) pour savoir comment le faire.
+* [Visua Studio Codel](https://code.visualstudio.com/) - Code editor
+* [Github](https://github.com) - Software development management
+* [HTML](https://www.w3.org/html/) - Programming web language
+* [CSS](https://www.w3schools.com/) - Programming web language
+* [JavaScript](https://www.w3schools.com/) - Programming web language
+* [W3Schools](https://www.w3schools.com//) -Programming ​knowledge
+* [developer mozilla](https://developer.mozilla.org/fr/) -Programming ​knowledge
 
 ## Versions
-Listez les versions ici 
-_exemple :_
-**Dernière version stable :** 5.0
-**Dernière version :** 5.1
-Liste des versions : [Cliquer pour afficher](https://github.com/your/project-name/tags)
-_(pour le lien mettez simplement l'URL de votre projets suivi de ``/tags``)_
+
+**Dernière version stable :** 1.0
+**Dernière version :** 1.0
+
 
 ## Auteurs
 
@@ -62,6 +47,7 @@ _(pour le lien mettez simplement l'URL de votre projets suivi de ``/tags``)_
 
 ## License
 
-Ce projet est sous licence ``exemple: WTFTPL`` - voir le fichier [LICENSE.md](LICENSE.md) pour plus d'informations
+Ce projet est sous aucune licence 
+
 
 
