@@ -139,7 +139,8 @@ img{
     bottom: auto;
     width: 300px;
     margin-top: 130px;
-    padding-left: 200px;
+    padding-left: 80px;
+    left :130px;
 }
 
 
@@ -179,7 +180,8 @@ img{
     bottom: auto;
     width: 300px;
     margin-top: 130px;
-    padding-right: 90px;
+    padding-right: 80px;
+    padding-left: 20px;
 }
 
 .multiplier-2x{

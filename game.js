@@ -1,5 +1,5 @@
 let affichage = document.getElementById('affichage');
-let score = 10000;
+let score = 0;
 let multiplicateur = 1;
 let prixMultiplier2 = 40;
 let compteurM2 = 0;
