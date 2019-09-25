@@ -1,6 +1,9 @@
 # PacmanClicker
 Cookieclicker , packman style
 
+# GITPAGE LINK
+https://aatauil.github.io/PacmanClicker/
+
 ## Pour commencer
 
 ### Ouvrir un fichier dans votre navigateur web, il existe deux méthode :
