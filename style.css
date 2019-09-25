@@ -114,11 +114,13 @@ img{
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    background-color:rgba(0,0,0,0.5);
     
     /* animation-name: left-hoverOff;
     transition: all .5s ease-in-out;
      */
 }
+
 /* 
 .imgLeft:hover{
     width: 115px;
@@ -159,6 +161,8 @@ img{
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    background-color:rgba(0,0,0,0.5);
+
 }
 /* 
 .imgRight:hover{
