@@ -2,9 +2,13 @@ let affichage = document.getElementById('affichage');
 let score = 10000;
 let multiplicateur = 1;
 let prixMultiplier2 = 40;
+let compteurM2 = 0;
 let prixMultiplier4 = 500;
+let compteurM4 = 0;
 let prixAuto1 = 40;
-let prixAuto2 = 40
+let compteurA1 = 0;
+let prixAuto2 = 40;
+let compteurA2 = 0;
 let prixBonus = 1000;
 let prixUnSurDeux = 40;
 let niveau = 1;
@@ -31,7 +35,8 @@ Multiplier2.addEventListener('click', function() {
         score -= prixMultiplier2;
         affichage.innerHTML = score;
         prixMultiplier2 = prixMultiplier2 * 2;
-        prixm2.innerHTML = prixMultiplier2 + " clicks";
+        compteurM2 += 1;
+        prixm2.innerHTML = prixMultiplier2 + " clicks" + " *" + compteurM2 + " ";
     }
 })
 
@@ -44,22 +49,25 @@ Multiplier4.addEventListener('click', function() {
         score -= prixMultiplier4;
         affichage.innerHTML = score;
         prixMultiplier4 = prixMultiplier4 * 2;
-        prixm4.innerHTML = prixMultiplier4 + " clicks";
+        compteurM4 += 1;
+        prixm4.innerHTML = prixMultiplier4 + " clicks" + " *" + compteurM4 + " ";
     }
 })
 
 // bonus
+let bonusCheck = false;
 let bonus = document.getElementById('bonus');
 let time = 31;
 let timeElement = document.getElementById('time');
 let prixB = document.getElementById('prix-bonus');
-bonus.addEventListener('click', function() {
-    if (score >= prixBonus) {
-        prixBonus = prixBonus * 2;
-        prixB.innerHTML = prixBonus + " clicks"
+let eventbonus = bonus.addEventListener('click', function() {
+    if (score >= prixBonus && !bonusCheck) {
+        bonusCheck = true;
         multiplicateur = multiplicateur * 10
         score -= prixBonus;
         affichage.innerHTML = score;
+        prixBonus = prixBonus * 2;
+        prixB.innerHTML = prixBonus + " clicks"
         let interval = setInterval(function() {
             timeElement.innerHTML = "Temps restant : " +( time - 1);
             time -= 1;
@@ -67,9 +75,9 @@ bonus.addEventListener('click', function() {
             if (time == 0) {
                 clearInterval(interval);
                 multiplicateur = multiplicateur / 10;
-                
                 timeElement.innerHTML = "";
                 time = 31;
+                bonusCheck = false;
             }
         }, 1000);
     }
@@ -125,11 +133,12 @@ autoclick1.addEventListener('click', function() {
         score -= prixAuto1;
         affichage.innerHTML = score;
         setInterval(function() {
-            score += multiplicateur;
+            score += 1;
             affichage.innerHTML = score;
         }, 1000);
         prixAuto1 = prixAuto1 * 2;
-        prixa.innerHTML = prixAuto1+ " clicks";
+        compteurA1 += 1;
+        prixa.innerHTML = prixAuto1+ " clicks" + " *" + compteurA1 + " ";
     }
 })
 
@@ -141,11 +150,12 @@ autoclick2.addEventListener('click', function() {
         score -= prixAuto2;
         affichage.innerHTML = score;
         setInterval(function() {
-            score += multiplicateur;
+            score += 2;
             affichage.innerHTML = score;
         }, 1000);
         prixAuto2 = prixAuto2 * 2;
-        prixa2.innerHTML = prixAuto2+ " clicks";
+        compteurA2 += 1;
+        prixa2.innerHTML = prixAuto2+ " clicks" + " *" + compteurA2 + " ";
     }
 })
 
@@ -158,8 +168,10 @@ unSurDeux.addEventListener('click', function() {
         affichage.innerHTML = score;
         if (Math.random() < 0.5) {
             score = score * 2;
+            affichage.innerHTML = score;
         } else {
             score = 0;
+            affichage.innerHTML = score;
         }
         prixUnSurDeux = prixUnSurDeux * 2;
         prixdouble.innerHTML = prixUnSurDeux+ " clicks";
