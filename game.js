@@ -1,5 +1,5 @@
 let affichage = document.getElementById('affichage');
-let score = 40;
+let score = 0;
 let multiplicateur = 1;
 let prixMultiplier2 = 40;
 let compteurM2 = 0;
@@ -164,7 +164,7 @@ let unSurDeux = document.getElementById('double');
 let prixdouble = document.getElementById('prix-double');
 unSurDeux.addEventListener('click', function() {
     if (score >= prixUnSurDeux) {
-    
+
         if ( Math.random() > 0.5) {
             score = 0;
         } else {
